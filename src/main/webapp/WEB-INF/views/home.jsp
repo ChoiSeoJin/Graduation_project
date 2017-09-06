@@ -4,7 +4,7 @@
 <html>
 
    <head>
-   		<link rel="stylesheet" href = "../css/nav.css">
+   	
       <meta charset="UTF-8">
       <title>React App</title>
 
@@ -12,7 +12,7 @@
 
    <body>
       <div id="root"></div>
-      <script src="/built/bundle.js"></script>
+      <script src="/public/bundle.js"></script>
    </body>
 
 </html>

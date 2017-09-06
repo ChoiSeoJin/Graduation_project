@@ -110,6 +110,17 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		<dependency>
+			<groupId>commons-fileupload</groupId> 
+			<artifactId>commons-fileupload</artifactId> 
+			<version>1.2.1</version> 
+		</dependency> 
+		<dependency> 
+			<groupId>commons-io</groupId> 
+			<artifactId>commons-io</artifactId> 
+			<version>1.4</version> 
+		</dependency>
+
 	
 		<!-- Test -->
 		<dependency>
@@ -174,7 +185,21 @@
 							<arguments>install</arguments>
 						</configuration>
 					</execution>
+					<execution>
+			   			<id>webpack build</id>
+				   		 <goals>
+				        	<goal>webpack</goal>
+				   		 </goals>
+				
+			    <!-- optional: the default phase is "generate-resources" -->
+			   			 <phase>generate-resources</phase>
 			
+					    <configuration>
+					        <!-- optional: if not specified, it will run webpack's default
+					        build (and you can remove this whole <configuration> section.) -->
+					        <arguments>-p</arguments>
+					    </configuration>
+					</execution>
 				</executions>
 			</plugin>
 		    

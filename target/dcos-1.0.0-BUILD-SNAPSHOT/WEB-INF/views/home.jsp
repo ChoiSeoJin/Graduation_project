@@ -1,14 +1,18 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
+<!DOCTYPE html>
 <html>
-<head>
-	<title>Home</title>
-</head>
-<body>
-<h1>
-	Hello world!  
-</h1>
 
-<P>  The time on the server is ${serverTime}. </P>
-</body>
+   <head>
+   	
+      <meta charset="UTF-8">
+      <title>React App</title>
+
+   </head>
+
+   <body>
+      <div id="root"></div>
+      <script src="/public/bundle.js"></script>
+   </body>
+
 </html>

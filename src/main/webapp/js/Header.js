@@ -18,14 +18,14 @@ class Header extends React.Component {
  				</div>
  				
  				<ul>
-				  <li><a href="#joblist">JOB LIST</a></li>
-				  <li><a href="#jobcreate">JOB CREATE</a></li>
+				  <li><a href="joblist">JOB LIST</a></li>
+				  <li><a href="jobcreate">JOB CREATE</a></li>
 				  <li className="dropdown">
 				    <a href="javascript:void(0)" className="dropbtn">UPLOAD</a>
 				    <div className="dropdown-content">
-				      <a href="#file">File</a>
-				      <a href="#component">Component</a>
-				      <a href="#script">Script</a>
+				      <a href="/fileUpload/file">File</a>
+				      <a href="/fileUpload/component">Component</a>
+				      <a href="/fileUpload/script">Script</a>
 				    </div>
 				  </li>
 				</ul>
