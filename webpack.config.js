@@ -1,15 +1,16 @@
 module.exports = {
-    entry: './src/main/webapp/js/index.js',
+    entry: './src/index.js',
 
     output: {
-        path:'/src/main/webapp/public/',
+        path: __dirname + '/public/',
         filename: 'bundle.js'
     },
 
     devServer: {
+        historyApiFallback: true,
         inline: true,
         port: 7777,
-        contentBase:'/src/main/webapp/public/'
+        contentBase: __dirname + '/public/'
     },
 
     module: {
